@@ -1,1 +1,2 @@
-var nodeTracker = []
+var nodeIndexes = []
+var nodes = []

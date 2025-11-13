@@ -110,11 +110,6 @@ const graph = {
 			quotation : "What does your conscience say? -- 'You shall become who you are.'"
 			,
 			src: "Nietzsche, The Gay Science"
-		},
-		{
-			index :"aurelius_stoic",
-			quotation : "The things you think about determine the quality of your mind. Your soul takes on the color of your thoughts.",
-			src :"Marcus Aurelius, Meditations"
 		}
 		,
 		{
@@ -188,7 +183,7 @@ const graph = {
 		},
 		{
 			index : "socrates_beyond",
-			quotation : "So, if you're wavering, it's obvious from what we've said that not only are you ignorant about the most imporant things [the just, advantageous, good, and admirable], but you also think you know what you don't know."
+			quotation : "So, if you're wavering, it's obvious from what we've said that not only are you ignorant about the most imporant things, but you also think you know what you don't know."
 			,
 			src : "Plato, Alcibiades"
 		},
@@ -319,14 +314,106 @@ const graph = {
 			index:"god_of_gods",
 			quotation : "You should thus show the prohibitions. Why? Because we say that the Tathagata, the Right-Enlightened One, is one who is true [truthful]. He sees the right path. And the Tathagata is the gods of gods, and he indeed talks about the superb virtues of the ten good deeds and meanings thereof."
 			,src : "Nirvana Sutra"
+		},
+		{
+			index:"heraclitus_logos",
+			quotation: "To the Self belongs the self-multiplying Logos.",
+			src: "Heraclitus, Fragments"
+		},
+		{
+			index:"patriarch_identity",
+			quotation: "Good friends, all of your coming here must have arisen out of your own identities.",
+			src: "The Sixth Patriarch, Platform Sutra"
+		},
+		{
+			index:"patriarch_logos",
+			quotation: "If One Understands the Meaning, one transcends samsara; if one is attached to one's sensory realms, samsara is activated, just as waves [arise on] water. This is called the 'other shore,' therefore it is said to be 'paramita' (Wisdom)."
+			,
+			src: "The Sixth Patriarch, Platform Sutra"
+		},
+		{
+			index :"patriarch_doubt",
+			quotation : "If you want to teach others, <br> You must have expedient means yourself, <br> Do not make them destroy their doubts -- <br> This is what allows the self-nature to become manifest."
+			,
+			src:"The Sixth Patrarich, Platform Sutra"
+		},
+		{
+			index : "master_patriarch",
+			quotation : "Through the Master's internal mirroring, all is attained in the fundamental.",
+			src: "The Sixth Patriarch, Platform Sutra"
+		},
+		{
+			index : "logos_as_such",
+			quotation : "Good friends, thoughts are activated from the self-nature of suchness. Although the six sensory faculties possesss perceptual cognition, they do not defile the myriad realms. And yet the true nature is always autonomous. Therefore, the sutra says, 'When one is able to discriminate well the characteristics of the dharmas, this is to be unmoving within the cardinal meaning.'" 
+			, 
+			src:"The Sixth Patriarch, Platform Sutra"
+		},
+		{
+			index : "lankavatara_nature",
+			quotation : "Again, Mahamati, what is meant by the emptiness of self-nature? Mahamati, it is that all things in their self-nature are unborn, hence the emptiness of self-nature, and it is therefore said that things are empty in their self-nature."
+			,
+			src: "Lankavatara Sutra"
+		},
+		{
+			index : "emptiness_light",
+			quotation : "Indeed, emptiness and radiance are not separate; the essential nature of emptiness is radiance and the essential nature of radiance is emptiness. This indivisible, naked, unclouded, and exposed awareness, present as it is right now in a natural uncontrived state, is the Buddha-body of essentiality."
+			,src : "Tibetan Book of the Dead"
 		}
 
 	],
 	rels : [
 		{
+			start:"heraclitus_logos",
+			end : "patriarch_logos",
+			pages : ["Heraclitus", "Platform Sutra", "Logic", "Self-Nature"]
+		},
+		{
+			start:"heraclitus_logos",
+			end : "patriarch_identity",
+			pages : ["Heraclitus", "Platform Sutra", "Self-Nature"]
+		},
+		{
+			start : "avatam_sun",
+			end : "master_patriarch",
+			pages : ["Sun", "Platform Sutra", "Avatamsaka Sutra", "Self-Nature", "Form"]
+		},
+		{
+			start : "heraclitus_rivers",
+			end:"logos_as_such",
+			pages : ["Heraclitus", "Form", "Logic", "Platform Sutra", "Self-Nature"]
+		},
+		{
+			start : "russell_logic",
+			end:  "logos_as_such",
+			pages : ["Logic", "Form", "Emptiness", "Platform Sutra", "Bertrand Russell"]
+		},
+		{
+			start : "hume_self",
+			end : "lankavatara_nature",
+			pages : ["Hume", "Self", "anatta", "Self-Nature", "Lankavatara Sutra"]
+		},
+		{
+			start : "lankavatara_nature",
+			end : "logos_as_such",
+			pages : ["Hume", "Self", "anatta", "Emptiness", "Self-Nature", "Lankavatara Sutra"]
+		},
+
+		{
+			start: "doubt_is",
+			end : "patriarch_doubt",
+			pages : ["Platform Sutra", "Nirvana Sutra", "Skillful Means"]
+		},
+
+		
+		{
 			start : "cogito",
 			end : "doubt_is",
 			pages : ["Descartes", "Nirvana Sutra", "anatta", "Self"]
+		},
+		{
+			start: "cogito",
+			end : "patriarch_doubt",
+			pages : ["Platform Sutra", "Descartes"]
 		},
 		{
 			start : "cartesian_senses",
@@ -336,48 +423,84 @@ const graph = {
 		{
 			start : "descartes_conqueror",
 			end: "dhammapada_conquest",
-			pages: ["Descartes", "Marcus Aurelius", "The Dhammapada"]
+			pages: ["Descartes", "The Dhammapada"]
 		},
 		{
 			start: "descartes_conqueror",
 			end : "diamond_transformation",
-			pages : ["Descartes", "Diamond Sutra", "Marcus Aurelius"]
+			pages : ["Descartes", "Diamond Sutra"]
 		},
 		{
+
 			start : "diamond_transformation",
 			end:  "dhammapada_conquest",
 			pages: ["Dhammapda", "Diamond Sutra"]
 		},
 		{
+			//T
+			start : "kant_yogacara",
+			end : "lankavatara_concept",
+			pages : ["Kant", "Lankavatara Sutra", "Maya", "Matter", "Form", "Plato"]
+		},
+		{
+			//A
 			start: "kant_yogacara",
-			end : "lankavatara_yogacara",
-			pages : ["Yogacara", "Kant", "Maya", "Matter", "Diamond Sutra", "Lankavatara Sutra"]
+			end: "diamond_senses",
+			pages : ["Kant", "Yogacara", "Maya", "Matter", "Diamond Sutra", "Diamond Sutra"]
 		},
 		{
-			start: "diamond_senses",
-			end: "kant_yogacara",
-			pages : ["Kant", "Yogacara", "Maya", "Matter", "Diamond Sutra", "Lankavatara Sutra"]
-		},
-		{
+			//N
 			start : "lankavatara_yogacara",
 			end: "tibetan_yogacara",
 			pages: ["Heraclitus", "Yogacara", "Tibetan Book of the Dead", "Lankavatara Sutra"]
 		},
 		{
+			start : "diamond_senses",
+			end: "lankavatara_yogacara",
+			pages : ["Kant"]
+		},
+		{
+			start : "plato_form",
+			end : "tibetan_yogacara",
+			pages : ["Plato", "Yogacara"]
+		}
+		,
+		{
+			start: "tibetan_yogacara",
+			end : "nietzsche_truth",
+			pages : ["Nietzsche", "Yogacara"]
+		},
+		{
+			//T
 			start : "kant_yogacara",
 			end: "tibetan_yogacara",
 			pages: ["Yogacara", "Tibetan Book of the Dead", "Lankavatara Sutra", "Kant"]
 		},
 		{
+			//I
+			start : "lankavatara_yogacara",
+			end: "heraclitus_rivers",
+			pages: ["Heraclitus", "Yogacara", "Tibetan Book of the Dead", "Lankavatara Sutra", "Kant"]
+		},
+		{
+			//I
 			start : "diamond_senses",
 			end: "tibetan_yogacara",
 			pages: ["Yogacara", "Tibetan Book of the Dead", "Diamond Sutra"]
 		},
 		{
+			//T
+			start: "kant_yogacara",
+			end : "lankavatara_yogacara",
+			pages : ["Yogacara", "Kant", "Maya", "Matter", "Diamond Sutra", "Lankavatara Sutra"]
+		},
+		{
+			//N
 			start : "diamond_senses",
 			end: "lankavatara_yogacara",
 			pages: ["Yogacara", "Lankavatara Sutra", "Diamond Sutra"]
 		},
+		
 
 		/*{
 			start : "tibetan_mind",
@@ -404,20 +527,11 @@ const graph = {
 			end : "nietzsche_becoming",
 			pages : ["Nietzsche", "The Dhammapada", "Self", "Ethics", "Dharma", "Descartes", "Marcus Aurelius"]
 		},
-		{
-			start : "aurelius_stoic",
-			end : "dhammapada_hero",
-			pages : ["Marcus Aurelius", "The Dhammapada", "Ethics", "Dharma"]
-		},
-		{
-			start : "aurelius_stoic",
-			end : "nietzsche_becoming",
-			pages : ["Marcus Aurelius", "Nietzsche", "Ethics", "Dharma"]
-		},
+		
 		{
 			start : "aurelius_death",
 			end : "dhammapada_quarrels",
-			pages : ["Marcus Aurelius", "The Dhammapada", "Ethics", "Dharma"]
+			pages : ["The Dhammapada", "Ethics", "Dharma"]
 		}
 		,
 		{
@@ -542,12 +656,8 @@ const graph = {
 			end : "lankavatara_concept",
 			pages : ["Nietzsche", "Lankavatara Sutra", "Maya", "Form", "Plato"]
 		}
-		,
-		{
-			start : "kant_yogacara",
-			end : "lankavatara_concept",
-			pages : ["Kant", "Lankavatara Sutra", "Maya", "Matter", "Form", "Plato"]
-		}
+		
+		
 		,
 		{
 			start : "nietzsche_suffering",
@@ -652,7 +762,24 @@ const graph = {
 			start : "exalted_king",
 			end : "god_of_gods",
 			pages : ["Nirvana Sutra", "Dharma", "Morality", "Wisdom", "Eternity", "Exalted Sublime Golden Light"]
+		},
+		{
+			start: "nietzsche_suffering",
+			end : "lankavatara_suffering",
+			pages : ["Nietzsche", "Lankavatara Sutra", "Suffering", "Plato"]
+		},
+		{
+			start : "emptiness_light",
+			end: "heart_form",
+			pages : ["Tibetan Book of the Dead", "Heart Sutra", "Emptiness", "Form", "Logic", "Eternity"]
 		}
+		,
+		{
+			start : "emptiness_light",
+			end: "nirvana_eternity",
+			pages : ["Tibetan Book of the Dead", "Nirvana Sutra", "Emptiness", "Form", "Logic", "Eternity"]
+		}
+
 
 
 		/*{

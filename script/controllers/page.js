@@ -7,6 +7,7 @@ $(document).ready(function(){
 })
 
 $(document).on("ANCHOR", function(){
+	$(".mobile_menu").hide();
 	if(!firstLoad){
 		initializePages();
 	}

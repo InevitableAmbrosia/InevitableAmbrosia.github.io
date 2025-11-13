@@ -119,6 +119,7 @@ h1 a, h1 a :visited{
 	text-shadow:1px 1px darkgoldenrod;
 	position:relative;
 	letter-spacing:3px;
+	box-sizing:border-box;
 	text-decoration:none;
 	font-family:"Stack Sans Notch", "Tahoma";
 	font-weight:400;
@@ -146,6 +147,7 @@ h1 a, h1 a :visited{
 a.vehicle:not(.mobile_sub li a.vehicle) {
 	padding:12px 8px 12px 30px;
 	display:block;
+	box-sizing:border-box;
 	color:yellow;
 	font-size:14px;
 	text-decoration:none;
@@ -323,7 +325,7 @@ div.white_lotus{
 		left:78px;
 		box-shadow:none;
 		background-color:blue;
-		width:182px;
+		width:220px;
 	}
 
 	#mobile_header{
@@ -362,21 +364,23 @@ div.white_lotus{
 	}
 
 	.mobile_nav_a{
-		margin-left:23px;
+		margin-left:15px;
 		font-size:28px;
-		padding:34px 0px 34px 31px;
+		padding:34px 0px 34px 64px;
 		color:blue;
+		box-sizing:border-box;
 		display:block;
-		width:100%;
+		width:auto;
 		text-shadow:1px 1px darkgoldenrod;
 	}
 
 	.mobile_sub li a.vehicle, .mobile_sub li a.vehicle:visited{
 		color:red;
 		font-size:21px;
-		margin-left:34px;
-		padding:42px 0px 42px 28px;
+		padding:42px 0px 42px 79px;
 		text-shadow:1px 1px goldenrod;
+		box-sizing:border-box;
+
 		text-decoration:none;
 		display:block;
 		font-family:"Stack Sans Notch", "Tahoma";
@@ -406,8 +410,8 @@ div.white_lotus{
 	.mobile_menu{
 		width:100%;
 		height:100%;
-		top:101px;
-		height:calc(100% - 101px);
+		top:200px;
+		height:calc(100% - 200px);
 		position:absolute;
 		z-index:996;
 		background-color:orange;

@@ -49,5 +49,11 @@ $(document).ready(function(){
 
 	})
 
+	/* MOBILE */
+	$("#ham").click(function(e){
+		e.preventDefault();
+		$(".mobile_menu").fadeToggle();
+	})
+
 	
 })

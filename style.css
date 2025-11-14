@@ -323,14 +323,15 @@ div.white_lotus{
 		display:block;
 		font-size:33px;
 		text-align:left;
-		left:78px;
+		left:68px;
 		box-shadow:none;
-		background-color:blue;
+		background-color:orange;
 		width:240px;
+		color:blue;
 	}
 
 	#mobile_header{
-		background-color:blue;
+		background-color:orange;
 		height:200px;
 		box-shadow:3px 4px 5px yellow;
 		width:100%;
@@ -360,10 +361,10 @@ div.white_lotus{
 
 
 	.page_heading{
-		color:yellow;
+		color:red;
 		padding-bottom:0px;
 		padding-top:0px;
-		text-shadow:2px 2px red;
+		text-shadow:2px 2px yellow;
 		text-align:right;
 		box-shadow:none;
 	}
@@ -372,18 +373,17 @@ div.white_lotus{
 		margin-left:15px;
 		font-size:28px;
 		padding:34px 0px 34px 67px;
-		color:blue;
+		color:orange;
 		box-sizing:border-box;
 		display:block;
 		width:auto;
-		text-shadow:1px 1px darkgoldenrod;
+		text-shadow:1px 1px yellow;
 	}
 
 	.mobile_sub li a.vehicle, .mobile_sub li a.vehicle:visited{
 		color:red;
 		font-size:21px;
 		padding:34px 0px 34px 84px;
-		text-shadow:1px 1px goldenrod;
 		box-sizing:border-box;
 
 		text-decoration:none;
@@ -419,7 +419,7 @@ div.white_lotus{
 		height:calc(100% - 200px);
 		position:absolute;
 		z-index:996;
-		background-color:orange;
+		background-color:blue;
 	}
 
 	.mobile_sidebar{
@@ -436,6 +436,12 @@ div.white_lotus{
 		margin-left:0px;
 		top:200px;
 		right:0px;
+	}
+
+	div.white_lotus{
+		padding-left: calc(3.5% + 47px);
+   		padding-right: calc(3.5% + 47px);
+
 	}
 
 	.quotation{

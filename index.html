@@ -5,16 +5,15 @@
 		<script src="lib/anchor.js"></script>
 		<!--Models!-->
 		<script src="script/models/menu.js"></script>
-		<script src="script/models/white_lotus.js"></script>
+		<script src="script/models/home.js"></script>
 		<script src="script/models/quotation_graph.js"></script>
-		<script src="script/models/node_helper.js"></script>
 		<!--Views!-->
 		<script src="script/views/menu.js"></script>
-		<script src="script/views/vehicle.js"></script>
-		<script src="script/views/white_lotus.js"></script>
+		<script src="script/views/quotations.js"></script>
+		<script src="script/views/home.js"></script>
 		<!--Controllers!-->
 		<script src="script/controllers/page.js"></script>
-		<script src="script/controllers/node_helper.js"></script>
+		<script src="script/controllers/quotation_graph.js"></script>
 
 
 
@@ -25,28 +24,28 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Stack+Sans+Notch:wght@200&display=swap&family=Zen+Dots&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<h1><a class="ANCHOR white_lotus" href="#white_lotus">Lotus App</a></h1>
+		<h1><a class="ANCHOR home" href="#white_lotus">Lotus App</a></h1>
 		<img class="white_lotus_img" src="https://i.imgur.com/Sx1ZjSB.jpeg">
 		<div id="mobile_header">
 			<a href="#" id="ham">&#9776;</a>
 		</div>
 		<ul class="menu mobile_menu">
-			<li class="thinkers_li"><a href="#" class="show" id="char_tog1">&#9654;</a><a href="#" class="hide" id="char_tog">&#9660;</a><a class="mobile_nav_a nav_a" href="#">Thinkers</a>
+			<li class="thinkers_li"><a href="#" class="show" id="char_tog1">&#9654;</a><a href="#" class="hide" id="char_tog">&#9660;</a><a class="mobile_nav_a" href="#">Thinkers</a>
 				<ul class="mobile_sub thinkers_menu">
 					
 				</ul>
 			</li>
-			<li class="sutras_li"><a href="#" class="show" id="sutras_tog1">&#9654;</a><a href="#" class="hide" id="sutras_tog">&#9660;</a><a class="mobile_nav_a nav_a" href="#">Sutras</a>
+			<li class="sutras_li"><a href="#" class="show" id="sutras_tog1">&#9654;</a><a href="#" class="hide" id="sutras_tog">&#9660;</a><a class="mobile_nav_a" href="#">Sutras</a>
 				<ul class="mobile_sub sutras_menu">
 					
 				</ul>
 			</li>
-			<li class="buddhist_li"><a href="#" class="show" id="buddha_tog1">&#9654;</a><a href="#" class="hide" id="buddha_tog">&#9660;</a><a class="mobile_nav_a nav_a" href="#">Buddhist Glossary</a>
+			<li class="buddhist_li"><a href="#" class="show" id="buddha_tog1">&#9654;</a><a href="#" class="hide" id="buddha_tog">&#9660;</a><a class="mobile_nav_a" href="#">Buddhist Glossary</a>
 				<ul class="mobile_sub buddhist_menu">
 					
 				</ul>
 			</li>
-			<li class="hermetic_li"><a href="#" class="show" id="hermetic_tog1">&#9654;</a><a href="#" class="hide" id="herm_tog">&#9660;</a><a class="mobile_nav_a nav_a" href="#">Hermetic Glossary</a>
+			<li class="hermetic_li"><a href="#" class="show" id="hermetic_tog1">&#9654;</a><a href="#" class="hide" id="herm_tog">&#9660;</a><a class="mobile_nav_a" href="#">Hermetic Glossary</a>
 				<ul class="mobile_sub hermetic_menu">
 					
 				</ul>
@@ -81,13 +80,13 @@
 			<h2 class="page_heading"></h2>
 		</div>
 
-		<div class="ANCHOR_partial white_lotus">
+		<div class="ANCHOR_partial home">
 
 			<p id="home_description"></p>
 			<p id="navigation_instructions"></p>
 			<p id="engineering"></p>
 		</div>
-		<div class="ANCHOR_partial vehicle">
+		<div class="ANCHOR_partial quotations">
 
 			<div id="quotations_container">
 				

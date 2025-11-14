@@ -87,7 +87,7 @@ h1 a, h1 a :visited{
 	box-shadow:0px 4px 5px orange;
 	position:relative;
 	z-index:999;
-	text-align:left;
+	text-align:center;
 	width:281px;
 	box-sizing:border-box;
 	font-family:"Zen Dots", "Georgia";
@@ -145,7 +145,7 @@ h1 a, h1 a :visited{
 	display:none;
 }
 
-a.vehicle:not(.mobile_sub li a.vehicle) {
+a.quotations:not(.mobile_sub li a.quotations) {
 	padding:12px 8px 12px 30px;
 	display:block;
 	box-sizing:border-box;
@@ -168,12 +168,12 @@ a.vehicle:not(.mobile_sub li a.vehicle) {
     background-blend-mode: lighten;
 }
 
-.white_lotus p{
+.home p{
 	
 	padding-top:32px;
 }
 
-div.white_lotus{
+div.home{
 	padding-left:calc(3.5% + 31px);
 	padding-right: calc(3.5% + 31px);
 }
@@ -282,7 +282,7 @@ div.white_lotus{
 	display:none;
 }
 
-div.white_lotus{
+div.home{
 	text-align:justify;
 	font-family:"Montserrat", sans-serif;
 	font-style:normal;
@@ -292,10 +292,13 @@ div.white_lotus{
 .white_lotus_img{
 	
 	position:fixed;
-	right:0px;
-	width:33px;
-	top:52px;
+	left:0px;
+	width:281px;
+	height:71px;
+	top:0px;
 	z-index:9999;
+	opacity:.23;
+
 }
 
 /* MOBILE */
@@ -305,21 +308,39 @@ div.white_lotus{
 		left:8px;
 		position:fixed;
 		font-size:55px;
-		color:yellow;
+		text-shadow:1px 1px blue;
 		text-decoration:none;
-		top:19px;
+		top:14px;
 		z-index:9999;
 		padding-right:13px;
 	}
 
-	#ham:hover{
-		color:yellow;
+	#ham:not(.hamGlows){
+		color:darkgoldenrod;
 	}
+
+	.hamGlows{
+		color:red;
+		text-decoration:underline;
+
+	}
+
+
+
+	#ham:hover:not(.hamGlows){
+		color:red;
+	}
+
+	.hamGlows:hover{
+		color:darkgoldenrod;	
+	}
+
+
 
 
 	h1 a, h1 a:visited{
 		position:fixed;
-		top:12px;
+		top:9px;
 		display:block;
 		font-size:33px;
 		text-align:left;
@@ -349,9 +370,9 @@ div.white_lotus{
 
 	.page_header{
 		position:fixed;
-		padding-right:calc(3.5% + 57px);
+		margin-right:calc(3.5% + 57px);
 		position:fixed;
-		top:178px;
+		top:173px;
 		padding-bottom:0px;
 		box-shadow:none;
 		background-color:transparent;
@@ -364,8 +385,9 @@ div.white_lotus{
 		color:red;
 		padding-bottom:0px;
 		padding-top:0px;
-		text-shadow:2px 2px yellow;
+		text-shadow:2px 2px blue;
 		text-align:right;
+		font-size:26px;
 		box-shadow:none;
 	}
 
@@ -377,17 +399,21 @@ div.white_lotus{
 		box-sizing:border-box;
 		display:block;
 		width:auto;
-		text-shadow:1px 1px yellow;
+		font-family:"Stack Sans Notch", "Tahoma";
+		text-decoration:none;
 	}
 
-	.mobile_sub li a.vehicle, .mobile_sub li a.vehicle:visited{
+
+
+	.mobile_sub li a.quotations, .mobile_sub li a.quotations:visited{
 		color:red;
 		font-size:21px;
 		padding:34px 0px 34px 84px;
 		box-sizing:border-box;
-
+		color:lightgoldenrodyellow;
 		text-decoration:none;
 		display:block;
+		text-decoration:underline;
 		font-family:"Stack Sans Notch", "Tahoma";
 	}
 
@@ -438,7 +464,7 @@ div.white_lotus{
 		right:0px;
 	}
 
-	div.white_lotus{
+	div.home{
 		padding-left: calc(3.5% + 47px);
    		padding-right: calc(3.5% + 47px);
 
@@ -448,10 +474,17 @@ div.white_lotus{
 		font-size:16px;
 	}
 
+	.quotation, .src{
+		font-size:20px;
+	}
+
 	.white_lotus_img{
 		position:fixed;
 		right:0px;
-		left:auto;
-		top:178px;
+		left:69px;
+		top:5px;
+		width:225px;
+		height:80px;
+		border-radius:20px;
 	}
 }
